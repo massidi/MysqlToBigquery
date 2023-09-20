@@ -22,8 +22,8 @@ import pandas as pd  # Import pandas for DataFrame
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:/wamp64/www/loadData2/credentials/googleCloud/plexiform_credential.json"
 
 # Load the DataFrame into BigQuery
-project_id = "plexiform-muse-393209"
-dataset_id = "Hasap"
+project_id = ""
+dataset_id = ""
 
 # Initialize the BigQuery client
 client = bigquery.Client(project=project_id)
@@ -34,7 +34,7 @@ try:
         host="localhost",
         user="root",
         password="",
-        database="Hasap"
+        database=""
     )
 
     if connection.is_connected():

@@ -12,7 +12,7 @@ try:
         host="localhost",    # Adresse du serveur MySQL
         user="root",  # Nom d'utilisateur MySQL
         password="",  # Mot de passe MySQL
-        database="Hasap"  # Nom de la base de données MySQL
+        database=""  # Nom de la base de données MySQL
     )
 
     if connection.is_connected():
@@ -56,7 +56,7 @@ try:
         host="localhost",
         user="root",
         password="",
-        database="Hasap"
+        database=""
     )
 
     if connection.is_connected():
@@ -101,9 +101,9 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\\Users\\reddy.massidisemi\\Lo
 
 
 # Load the DataFrame into BigQuery
-project_id = "plexiform-muse-393209"
-dataset_id = "Hasap"
-table_id = "devis_lignes"
+project_id = ""
+dataset_id = ""
+table_id = ""
 
 client = bigquery.Client(project=project_id)
 
