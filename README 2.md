@@ -6,7 +6,10 @@ This document explains a Python script for loading data from a MySQL database ta
 
 1. Ensure you have the necessary Python libraries installed:
    - `google-cloud-bigquery`
-   - `mysql-connector-python`
+   - `mysql-connector-python`  
+   - or you can install in once using :
+    ```bash
+   pip install -r requirements.txt
 
 2. You need a Google Cloud Service Account Key JSON file, which you've set as the environment variable `GOOGLE_APPLICATION_CREDENTIALS`. This service account should have the necessary permissions to interact with BigQuery.
 
